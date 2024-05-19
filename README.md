@@ -14,7 +14,7 @@ To set up the project locally, please make sure you have [Docker](https://www.do
 1. Clone the repository:
 
     ```bash
-    git clone <repository_url>
+    git clone git@github.com:dammy95/Niyo-group-interview.git
     ```
 
 2. Navigate to the project directory:
@@ -113,3 +113,82 @@ The project exposes the following endpoints:
 - `GET /api/tasks/{pk}/`: endpoint to retreive a single task
 - `PUT /api/tasks/{pk}/`: endpoint to update a single task
 - `DELETE /api/tasks/{pk}/`: endpoint to delete a single task
+
+
+## Tests
+
+To run the unit tests for this project (make sure the docker container is already running):
+
+```bash
+    docker-compose exec web pytest
+```
+
+
+## Testing the endpoints with postman:
+
+### `api/users/register/`
+
+Test with the given parameters (fill in with details of your choice):
+
+```json
+{
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "password": "",
+    "confirm_password": "",
+}
+```
+
+### `api/users/login/`
+
+```json
+{
+    "email": "",
+    "password": "",
+}
+```
+
+You will get back a json object that has the access token. 
+
+Please copy this access token as you will need it in the subsequent next steps.
+
+For the following urls below, add the access token as an `Authorization` header in Postman using the `Bearer Token` type.
+The token has an access lifetime of 1 hour and a refresh lifetime of 1 day.
+
+### GET - `api/tasks/`
+
+At the moment you should have an empty list since we've not created any tasks yet
+
+### POST - `api/tasks/`
+
+Create a task with the following: 
+
+```json
+{
+    "title": "",
+    "description": "",
+    "priority": "", // LOW, MEDIUM, or HIGH
+}
+```
+
+### PUT - `api/tasks/`
+
+Update a task with the following: 
+
+```json
+{
+    "title": "",
+    "description": "",
+    "priority": "", // LOW, MEDIUM, or HIGH
+}
+```
+
+### GET - `api/tasks/{pk}`
+
+Get a task by replacing `pk` with a task primary key.
+
+### DELETE - `api/tasks/{pk}`
+
+Delete a task by replacing `pk` with a task primary key.
+
