@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local development settings
+.env
+
+# Django static files
+/staticfiles/
+
+# Django media files
+/media/
+
+# Virtual environment
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Editor-specific files
+*~
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Database files
+*.sqlite3
