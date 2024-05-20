@@ -1,6 +1,6 @@
 # Niyo Group Backend Developer Assessment – Damilola Olagunju
 
-This is the repo to the Backend Developer Assessment for Niyo Group
+This is the repo to the Backend Developer Assessment for Niyo Group written in Python and using the Django web framework.
 
 ## Table of Contents
 
@@ -117,7 +117,7 @@ The project exposes the following endpoints:
 - `DELETE /api/tasks/{pk}/`: endpoint to delete a single task
 
 
-## Tests
+## Run unit tests
 
 To run the unit tests for this project (make sure the docker container is already running):
 
