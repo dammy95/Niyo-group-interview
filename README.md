@@ -23,7 +23,9 @@ To set up the project locally, please make sure you have [Docker](https://www.do
     cd niyo-group-interview
     ```
 
-3. Run the docker container:
+3. Create a .env file and copy the contents in the env.txt file sent to you via email
+
+4. Run the docker container:
 
     ```bash
     docker compose up
@@ -125,6 +127,8 @@ To run the unit tests for this project (make sure the docker container is alread
 
 
 ## Testing the endpoints with postman:
+
+You can find the postman collection `.json` file in the email sent to you. You can download this and load it into your postman desktop app.
 
 ### `api/users/register/`
 
