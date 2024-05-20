@@ -164,23 +164,27 @@ At the moment you should have an empty list since we've not created any tasks ye
 
 Create a task with the following: 
 
+`priority` options: `['LOW', 'MEDIUM', 'HIGH']`
+
 ```json
 {
     "title": "",
     "description": "",
-    "priority": "", // LOW, MEDIUM, or HIGH
+    "priority": "",
 }
 ```
 
 ### PUT - `api/tasks/`
 
-Update a task with the following: 
+Update a task with the following:
+
+`priority` options: `['LOW', 'MEDIUM', 'HIGH']`
 
 ```json
 {
     "title": "",
     "description": "",
-    "priority": "", // LOW, MEDIUM, or HIGH
+    "priority": "",
 }
 ```
 
@@ -191,4 +195,3 @@ Get a task by replacing `pk` with a task primary key.
 ### DELETE - `api/tasks/{pk}`
 
 Delete a task by replacing `pk` with a task primary key.
-
